@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de dúvida</title>
+  </head>
+  <link rel="stylesheet" href="./src/CSS/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+    rel="stylesheet"
+  />
+  <body>
+    <main>
+      <div class="question">
+        <h1 class="title">
+          Ficou com dúvida? <br />
+          Nos mande uma mensagem!
+        </h1>
+        <p class="text">
+          Caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e
+          entraremos em contato em menos de 24h.
+        </p>
+      </div>
+
+      <div class="formulario">
+        <form>
+          <input
+            type="text"
+            placeholder="Nome completo*"
+            id="name"
+            autofocus
+          />
+          <input id="email" type="email" placeholder="Email*" />
+          <input id="phone" type="tel" placeholder="Telefone*" />
+          <input id="userMessage" type="text" class="message"  placeholder="Mensagem*"></input>
+          <p>* campos obrigatórios</p>
+          <input id="submitBtn" type="submit" class="submit" value="Enviar" />
+        </form>
+      </div>
+    </main>
+
+    <script src="./src/js/validacao.js"></script>
+  </body>
+</html>
